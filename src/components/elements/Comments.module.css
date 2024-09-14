@@ -1,0 +1,61 @@
+.comment {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 15px;
+  background-color: var(--gray-color);
+  padding: 20px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+
+}
+
+.commentContent {
+  max-width: 100%;
+  width: 95%;
+  overflow: hidden;
+}
+
+.commentContent .trash svg {
+  opacity: 0;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.commentContent:hover .trash svg {
+  opacity: 1;
+}
+
+.buttonLike {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttonLike:focus {
+  box-shadow: 0 0 0 2px transparent;
+}
+
+.buttonLike,
+.buttonLike svg path {
+  transition: .2s;
+}
+
+.buttonLike:hover,
+.buttonLike:hover svg path,
+.buttonLike:hover span {
+  color: var(--purple);
+}
+
+.buttonLike span {
+  transform: translateX(-8px);
+}
+
+@media (max-width: 784px) {
+  .perfil {
+    display: none;
+  }
+
+  .comment {
+    grid-template-columns: 1fr;
+  }
+}

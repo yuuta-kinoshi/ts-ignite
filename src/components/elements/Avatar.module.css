@@ -1,0 +1,15 @@
+.avatar {
+  border-radius: 8px;
+  outline: none;
+  width: 80px;
+  padding: 2px;  
+  cursor: pointer;
+}
+
+.avatarBorder {
+  border-radius: 8px;
+  outline: 2px solid var(--purple);
+  width: 80px;
+  padding: 2px;
+  cursor: pointer;
+}

@@ -1,0 +1,7 @@
+footer {
+  display: none;
+}
+
+.commentForm:focus-within footer {
+  display: block;
+}

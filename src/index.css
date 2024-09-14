@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Yuuta Kinoshi's color palette */
+:root {
+  --white: #fff;
+  --bg-color: #11111f;
+  --gray-color: #1f2937;
+  --purple: #8f00fc;
+  --dark-purple: #662896;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white);
+}
+
+html {
+  font-size: 87.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple);
+}
+
+
+body {
+  --sb-track-color: #232e33;
+  --sb-thumb-color: #8f00fc;
+  --sb-size: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 13px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 13px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
